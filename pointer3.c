@@ -14,8 +14,8 @@
 int main()
 {
   int t=5, *u, **v;
-  u=&t;
-  v=&u;
+  u=&t;  // it means u = t
+  v=&u;  // it means *v = u & **v = t
   
   printf("%d",foo(t,u,v));
   return 0;
